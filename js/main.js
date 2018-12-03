@@ -124,7 +124,8 @@ function puniChb(){
 		primac+="<input type='radio' name='rb' value='"+niz[i]+"'>"+niz[i]+"</rb>";
 	}
 	document.getElementById('radiji').innerHTML=primac;
-}
+	
+	}
 
 
 
