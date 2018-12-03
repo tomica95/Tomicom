@@ -11,6 +11,14 @@ window.addEventListener('load',puniChb);
 
 window.addEventListener('load',puniRb);
 
+var svi = document.getElementsByName('rb');
+
+for(var i=0; i<svi.length; i++){
+
+	svi[i].addEventListener('click',radRb);
+
+}
+
 
 
 function provIme(){
@@ -126,6 +134,14 @@ function puniChb(){
 	document.getElementById('radiji').innerHTML=primac;
 	
 	}
+	
+	function radRb(){
+
+		
+		console.log("sdadsa");
+
+	}
+	
 
 
 
