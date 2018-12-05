@@ -1,16 +1,23 @@
 $(document).ready(function(){
 
+    //funkcija za slajder
     slideShow();
 
+    //Show-hide teksta o autoru
     $('#ispis-tekst-autor').hide();
-	
-	
+
 	$('#prikazi').click(function(event){
 	   event.preventDefault();
 	   
 	  $('#ispis-tekst-autor').toggle();
 
     });
+
+    //funkcija za divove
+    
+    
+
+
 });
 
 function slideShow(){

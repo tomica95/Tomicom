@@ -35,13 +35,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">O nama</a>
+              <a class="nav-link" href="autor.html">O autoru</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Usluge</a>
+              <a class="nav-link" href="#">Polovni telefoni</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Kontakt</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -49,7 +49,8 @@
     </nav>
 
     <!-- Page Content -->
-	<h1>Kontaktirajte nas...</h1>
+  <h1>Kontaktirajte nas...</h1>
+  <div id="forma">
    <form>
 	Vase ime:<input type="text" id="ime">
 	<div id="ime-greska"></div>
@@ -57,10 +58,16 @@
 	<div id="prezime-greska"></div>
 	Vas email:<input type="text" id="mail">
 	<div id="mail-greska"></div>
-	Marka Vaseg telefona:<div id="lista"><select id="ddl"></select></div>
-	Opis kvara:<div id="chbovi"></div>
-	Dodajte napomenu:<div id="radiji"></div>
+  Marka Vaseg telefona:<div id="lista"><select id="ddl"></select></div>
+  <div id="greska-ddl"></div>
+  Opis kvara:<div id="chbovi"></div>
+  <div id="opis-greska"></div>
+  Da li zelite da mi dodjemo po telefon :<div id="radiji"></div>
+    <div id="radiji-greska"></div>
+  <input type="button" value="Posalji podatke" id="provera">
    </form>
+  </div>
+  
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
@@ -71,8 +78,6 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="js/main.js"></script>
 
   </body>

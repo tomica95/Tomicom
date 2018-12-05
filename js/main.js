@@ -11,15 +11,50 @@ window.addEventListener('load',puniChb);
 
 window.addEventListener('load',puniRb);
 
-var svi = document.getElementsByName('rb');
+document.getElementById('provera').addEventListener('click',provera);
 
-for(var i=0; i<svi.length; i++){
+document.getElementById('ddl').addEventListener('change',proveraDdl);
 
-	svi[i].addEventListener('click',radRb);
+window.addEventListener('load', function(){
+		
+	var sviChb = document.getElementsByName('chb');
+
+	for(var i=0; i<sviChb.length; i++){
+
+	sviChb[i].addEventListener('click',proveraChb);
+		}
+	});
+
+
+window.addEventListener('load',function(){
+
+
+	var sviRb = document.getElementsByName('rb');
+
+	for(var i=0; i<sviRb.length; i++){
+
+		sviRb[i].addEventListener('click',proveraRb);
+
+	}
+
+
+});
+
+
+
+
+
+function provera(){
+	var greske = [];
+	provIme();
+	provPrezime();
+	provEmail();
+	proveraDdl();
+	proveraChb();
+	proveraRb();
+	
 
 }
-
-
 
 function provIme(){
 	
@@ -32,15 +67,17 @@ function provIme(){
 	if(!regIme.test(ime.value)){
 		
 		ime.style.border="1px solid red";
-		console.log("Nije dobro");
 		ispisIme.innerHTML = "Vase ime mora poceti velikim slovom i imati barem 3 slova";
+		ispisIme.style.color="red";
+		
 		
 	}
 	else
 	{
 		ime.style.border="1px solid blue";
-		console.log("Dobro je");
-		ispisIme.innerHTML ="";
+		ispisIme.innerHTML ="Uspesno ste uneli vase ime";
+		ispisIme.style.color="blue";
+		
 		
 	}
 	
@@ -56,14 +93,16 @@ function provPrezime(){
 	if(!regPrezime.test(prezime.value)){
 		
 		prezime.style.border="1px solid red";
-		console.log("Nije dobro");
 		ispisPrezime.innerHTML = "Vase prezime mora poceti velikim slovom i imati barem 3 slova";
+		ispisPrezime.style.color="red";
+		
 	}
 	else
 	{
 		prezime.style.border="1px solid blue";
-		console.log("Dobro je");
-		ispisPrezime.innerHTML ="";
+		ispisPrezime.innerHTML ="Uspesno ste uneli Vase prezime";
+		ispisPrezime.style.color="blue";
+		
 	}
 	
 }
@@ -79,14 +118,16 @@ function provEmail(){
 	if(!regEmail.test(email.value)){
 		
 		email.style.border="1px solid red";
-		console.log("Nije dobro");
 		mailGreska.innerHTML = "Vas email nije u dobrom formatu";
+		mailGreska.style.color="red";
+		
 	}
 	else
 	{
 		email.style.border="1px solid blue";
-		console.log("Dobro je");
-		mailGreska.innerHTML ="";
+		mailGreska.innerHTML ="Uspesno ste uneli Vas email";
+		mailGreska.style.color="blue";
+		
 	}
 	
 	
@@ -122,6 +163,7 @@ function puniChb(){
 	document.getElementById('chbovi').innerHTML=primac;
 	
 }
+
 	var primac="";
 	function puniRb(){
 	
@@ -134,13 +176,100 @@ function puniChb(){
 	document.getElementById('radiji').innerHTML=primac;
 	
 	}
-	
-	function radRb(){
 
+	function proveraDdl(){
+
+		var ddl = document.getElementById('ddl');
+
+		var greskaDdl = document.getElementById('greska-ddl');
+
+		var selektovan = ddl.selectedIndex;
+
+		if(selektovan !=0){
+
+			var vrednost = ddl.options[ddl.selectedIndex].value;
+			greskaDdl.innerHTML="Marka je uspesno uneta";
+			greskaDdl.style.color="blue";
+			
 		
-		console.log("sdadsa");
+		}
+		else
+		{
+
+		greskaDdl.innerHTML="Morate uneti marku vaseg telefona";	
+		greskaDdl.style.color="red";
+		;
+
+		}
 
 	}
+	
+	function proveraChb(){
+
+		var sviChb= document.getElementsByName('chb');
+
+		var greska = document.getElementById('opis-greska');
+
+		var cekiran = "";
+
+		for(var i=0; i<sviChb.length; i++){
+			if(sviChb[i].checked){
+
+				cekiran+=sviChb[i];
+			}
+
+		}
+		if(cekiran==""){
+
+			greska.innerHTML="Morate oznaciti barem jedan kvar ";
+			greska.style.color="red";
+			
+
+		}
+		else
+		{
+			greska.innerHTML="Uspesno ste oznacili kvar";
+			greska.style.color="blue";
+			
+		}
+
+
+	}
+
+	function proveraRb(){
+
+		var sviRb = document.getElementsByName('rb');
+
+		var greska = document.getElementById('radiji-greska');
+
+		var primac="";
+
+		for(var i=0; i<sviRb.length; i++){
+			if(sviRb[i].checked){
+
+				primac=sviRb[i];
+				greska.innerHTML="Uspesno ste cekirali";
+				greska.style.color="blue";
+
+			}
+
+		}
+		if(primac==""){
+
+			greska.innerHTML="Morate cekirati opciju preuzimanja";
+			greska.style.color="red";
+			
+
+		}
+		else{
+
+			greska.innerHTML="Uspesno ste cekirali opciju preuzimanja";
+			greska.style.color="blue";
+		
+		}
+
+	}
+
 	
 
 
