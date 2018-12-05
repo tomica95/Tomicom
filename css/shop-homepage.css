@@ -14,13 +14,13 @@ body {
   }
 }
 
-img{
+#slajder img{
 
     display:none;
 
   }
 
-.aktivna{
+#slajder .aktivna{
 
   display:block;
 

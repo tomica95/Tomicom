@@ -2,7 +2,15 @@ $(document).ready(function(){
 
     slideShow();
 
+    $('#ispis-tekst-autor').hide();
+	
+	
+	$('#prikazi').click(function(event){
+	   event.preventDefault();
+	   
+	  $('#ispis-tekst-autor').toggle();
 
+    });
 });
 
 function slideShow(){
