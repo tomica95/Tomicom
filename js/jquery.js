@@ -18,8 +18,9 @@ $(document).ready(function(){
         
     
         $(this).animate({ 
+           
             fontSize: '+=10px',
-            height: '+=5px'
+           
         }, 75);
         
     
@@ -27,11 +28,21 @@ $(document).ready(function(){
        
     
         $(this).animate({  
-        fontSize: '-=10px',
-        height: '-=5px'
+        
+            fontSize: '-=10px',
         
     }, 75);
     
+    });
+
+
+
+    $('#meni li a').click(function(){
+
+
+        $(this).next('ul').slideToggle('fast');
+
+
     });
     
     

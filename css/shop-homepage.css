@@ -30,3 +30,21 @@ body {
   width: 402px;
 
 }
+#meni li{
+
+  list-style-type: none;
+ 
+
+}
+#meni{
+
+  list-style-type: none;
+ 
+}
+
+#meni li ul{
+
+  display:none;
+  
+  
+}
