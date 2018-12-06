@@ -15,11 +15,12 @@ document.getElementById('provera').addEventListener('click',provera);
 
 document.getElementById('ddl').addEventListener('change',proveraDdl);
 
-//funkcija za skrolovanje pozivanje
-window.onscroll= function(){
-		scroll()
-	
-	};
+window.addEventListener('load',function(){
+
+	document.getElementById('Da').addEventListener('click',textArea);
+
+
+});
 
 window.addEventListener('load', function(){
 		
@@ -174,12 +175,15 @@ function puniChb(){
 	function puniRb(){
 	
 	var niz = ['Da','Ne'];
+
 	
 	for(var i=0; i<niz.length; i++){
 		
-		primac+="<input type='radio' name='rb' value='"+niz[i]+"'>"+niz[i]+"</rb>";
+		primac+="<input type='radio' name='rb' id='"+niz[i]+"' value='"+niz[i]+"'>"+niz[i]+"</rb>";
 	}
 	document.getElementById('radiji').innerHTML=primac;
+
+
 	
 	}
 
@@ -273,6 +277,23 @@ function puniChb(){
 			greska.style.color="blue";
 		
 		}
+
+	}
+
+	function textArea(){
+
+		var polje = document.getElementById('text-area');
+
+		var ubaci = document.createElement('input');
+
+		ubaci.setAttribute('type','text');
+
+		var tekst = document.createTextNode('Morate uneti vasu adresu:');
+
+
+		polje.appendChild(tekst);
+		polje.appendChild(ubaci);
+
 
 	}
 
