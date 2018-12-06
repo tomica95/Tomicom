@@ -15,6 +15,12 @@ document.getElementById('provera').addEventListener('click',provera);
 
 document.getElementById('ddl').addEventListener('change',proveraDdl);
 
+//funkcija za skrolovanje pozivanje
+window.onscroll= function(){
+		scroll()
+	
+	};
+
 window.addEventListener('load', function(){
 		
 	var sviChb = document.getElementsByName('chb');
@@ -269,6 +275,9 @@ function puniChb(){
 		}
 
 	}
+
+
+	
 
 	
 
