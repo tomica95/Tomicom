@@ -13,7 +13,26 @@ $(document).ready(function(){
 
     });
 
-    //funkcija za divove
+    //funkcija za nav meni
+    $('a.nav-link').hover(function(){
+        
+    
+        $(this).animate({ 
+            fontSize: '+=10px',
+            height: '+=5px'
+        }, 75);
+        
+    
+    }, function(){
+       
+    
+        $(this).animate({  
+        fontSize: '-=10px',
+        height: '-=5px'
+        
+    }, 75);
+    
+    });
     
     
 
@@ -34,3 +53,6 @@ function slideShow(){
     setTimeout(slideShow, 3000); 
 
 }
+
+
+
