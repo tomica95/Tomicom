@@ -32,21 +32,12 @@ body {
   
 
 }
-#meni li{
-
-  list-style-type: none;
- 
-
-}
 #meni{
 
-  list-style-type: none;
- 
-}
-
-#meni li ul{
-
   display:none;
+  list-style-type: none;
+  font-size:30px;
+  color:white;
   
   
 }
@@ -61,5 +52,12 @@ body {
   font-size: 25px;
 
 }
+#slajder{
+  margin: 0 auto;
+  margin-top:30px;
+  margin-bottom:30px;
+
+}
+
 
 

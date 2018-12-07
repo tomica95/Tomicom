@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 
 
-    $('#meni li a').click(function(){
+    $('#vise').click(function(){
 
 
         $(this).next('ul').slideToggle('fast');
