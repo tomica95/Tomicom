@@ -24,24 +24,24 @@ function prviDiv(){
 
     var img = document.createElement('img');
         img.classList.add('card-img-top');	
-        img.setAttribute('src','http://placehold.it/700x400');
-        img.setAttribute('alt','Iphone 6s');
+        img.setAttribute('src','img/used/iPhone7.jpg');
+        img.setAttribute('alt','Iphone 7');
     
     var divTreci = document.createElement('div');
         divTreci.classList.add('card-body');
 
     var h41 = document.createElement('h4');
         h41.classList.add('card-title');
-    var textn1 = document.createTextNode('Naslov');
+    var textn1 = document.createTextNode('iPhone 7');
         h41.appendChild(textn1);
 
     var h51 = document.createElement('h5');
-        var texth51 =document.createTextNode('Cena');
+        var texth51 =document.createTextNode('270eur');
         h51.appendChild(texth51);
 
     var peovi = document.createElement('p');
         peovi.classList.add('card-text');
-        var peoviText = document.createTextNode('Opissss');
+        var peoviText = document.createTextNode('iPhone 7 u malo losijem stanju, stanje 7/10, funkcionalno potpuno ispravan, zakljucan na mts mrezu');
         peovi.appendChild(peoviText);
 
         divTreci.appendChild(h41);
@@ -75,24 +75,24 @@ function prviDiv(){
     
         var img = document.createElement('img');
             img.classList.add('card-img-top');	
-            img.setAttribute('src','http://placehold.it/700x400');
-            img.setAttribute('alt','Iphone 6s');
+            img.setAttribute('src','img/used/s8.jpg');
+            img.setAttribute('alt','Samsung s8 saphire blue');
         
         var divTreci = document.createElement('div');
             divTreci.classList.add('card-body');
     
         var h41 = document.createElement('h4');
             h41.classList.add('card-title');
-        var textn1 = document.createTextNode('Naslov');
+        var textn1 = document.createTextNode('Samsung s8');
             h41.appendChild(textn1);
     
         var h51 = document.createElement('h5');
-            var texth51 =document.createTextNode('Cena');
+            var texth51 =document.createTextNode('350eur');
             h51.appendChild(texth51);
     
         var peovi = document.createElement('p');
             peovi.classList.add('card-text');
-            var peoviText = document.createTextNode('Opissss');
+            var peoviText = document.createTextNode('Samsung s8 kao nov, star 6 meseci, full oprema, sim free');
             peovi.appendChild(peoviText);
     
             divTreci.appendChild(h41);
@@ -126,24 +126,24 @@ function prviDiv(){
         
             var img = document.createElement('img');
                 img.classList.add('card-img-top');	
-                img.setAttribute('src','http://placehold.it/700x400');
-                img.setAttribute('alt','Iphone 6s');
+                img.setAttribute('src','img/used/se.jpg');
+                img.setAttribute('alt','Iphone SE');
             
             var divTreci = document.createElement('div');
                 divTreci.classList.add('card-body');
         
             var h41 = document.createElement('h4');
                 h41.classList.add('card-title');
-            var textn1 = document.createTextNode('Naslov');
+            var textn1 = document.createTextNode('iPhone SE');
                 h41.appendChild(textn1);
         
             var h51 = document.createElement('h5');
-                var texth51 =document.createTextNode('Cena');
+                var texth51 =document.createTextNode('160eur');
                 h51.appendChild(texth51);
         
             var peovi = document.createElement('p');
                 peovi.classList.add('card-text');
-                var peoviText = document.createTextNode('Opissss');
+                var peoviText = document.createTextNode('iPhone SE, zakljucan na Vip mrezu, star 2 godine, full pakovanje, svi racuni');
                 peovi.appendChild(peoviText);
         
                 divTreci.appendChild(h41);
