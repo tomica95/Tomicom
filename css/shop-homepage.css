@@ -26,8 +26,10 @@ body {
 
 }
 .slike_vel{
-  height: 302px;
-  width: 402px;
+  height: 181px;
+  width: 241px;
+  margin:30px;
+  
 
 }
 #meni li{
@@ -48,3 +50,5 @@ body {
   
   
 }
+
+
