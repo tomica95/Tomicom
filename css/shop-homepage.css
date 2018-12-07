@@ -58,6 +58,28 @@ body {
   margin-bottom:30px;
 
 }
+#meni a {
+
+  color:white;
+  font-size:18px;
+}
+#forma{
+
+  width:60%;
+  margin: auto;
+  text-align:left;
+}
+
+#forma .polja{
+  margin-bottom: 20px;
+  
+  
+}
+.sp{
+
+  margin-right: 20px;
+}
+
 
 
 

@@ -294,6 +294,8 @@ function puniChb(){
 		polje.appendChild(tekst);
 		polje.appendChild(ubaci);
 
+		document.getElementById('Da').removeEventListener('click',textArea);
+
 
 	}
 

@@ -22,48 +22,70 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Tomicom</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Pocetna strana
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="autor.html">O autoru</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="galerija.html">Galerija</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Kontakt</a>
-            </li>
-          </ul>
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Tomicom - servis mobilnih telefona</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Početna strana
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="autor.html">O autoru</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galerija.html">Galerija</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Kontakt</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="#" id="vise">Partneri</a>
+                <ul id="meni">
+                    <li><a href="https://www.samsung.com">Samsung</a></li>
+                    <li><a href="https://www.apple.com">iPhone</a></li>
+                    <li><a href="https://www.huawei.com">Huawei</a></li>
+                  </ul>
+  
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
     <!-- Page Content -->
-  <h1>Kontaktirajte nas...</h1>
+  
   <div id="forma">
+      <h2>Kontaktirajte nas...</h2>
    <form>
-	Vase ime:<input type="text" id="ime">
-	<div id="ime-greska"></div>
-	Vase prezime:<input type="text" id="prezime">
-	<div id="prezime-greska"></div>
-	Vas email:<input type="text" id="mail">
-	<div id="mail-greska"></div>
-  Marka Vaseg telefona:<div id="lista"><select id="ddl"></select></div>
+     <div class="polja">
+	<span class="sp">Vase ime:</span><input type="text" id="ime">
+  <div id="ime-greska"></div>
+    </div>
+    <div class="polja">
+	<span class="sp">Vase prezime:</span><input type="text" id="prezime">
+  <div id="prezime-greska"></div>
+    </div>
+    <div class="polja">
+	<span class="sp">Vas email:</span><input type="text" id="mail">
+  <div id="mail-greska"></div>
+  </div>
+  <div class="polja">
+  <span class="sp">Marka Vaseg telefona:</span><div id="lista"><select id="ddl"></select></div>
   <div id="greska-ddl"></div>
-  Opis kvara:<div id="chbovi"></div>
+  </div>
+  <div class="polja">
+  <span class="sp">Opis kvara:</span><div id="chbovi"></div>
   <div id="opis-greska"></div>
-  Da li zelite da mi dodjemo po telefon :<div id="radiji"></div>
+  </div>
+  <div class="polja">
+  <span class="sp">Da li zelite da mi dodjemo po telefon :</span><div id="radiji"></div>
     <div id="radiji-greska"></div>
+  </div>
     <div id="text-area"></div>
   <input type="button" value="Posalji podatke" id="provera">
    </form>
@@ -79,7 +101,11 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-	<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script> 
+    <script src="js/jquery.js"></script>
+    <script src="js/mainIndex.js"></script>
 
   </body>
 
