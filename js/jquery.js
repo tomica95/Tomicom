@@ -19,7 +19,7 @@ $(document).ready(function(){
     
         $(this).animate({ 
            
-            fontSize: '+=10px',
+            fontSize: '23px',
            
         }, 75);
         
@@ -29,7 +29,7 @@ $(document).ready(function(){
     
         $(this).animate({  
         
-            fontSize: '-=10px',
+            fontSize: '16px',
         
     }, 75);
     

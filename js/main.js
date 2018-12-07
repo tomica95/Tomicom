@@ -125,7 +125,7 @@ function provEmail(){
 	if(!regEmail.test(email.value)){
 		
 		email.style.border="1px solid red";
-		mailGreska.innerHTML = "Vas email nije u dobrom formatu";
+		mailGreska.innerHTML = "Vas email mora biti u formatu user@example.com";
 		mailGreska.style.color="red";
 		
 	}
